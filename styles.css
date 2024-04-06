@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'CustomFontFamily';
+  src: url('font.woff') format('woff');
+}
+
+body {
+    //font-family: Arial, sans-serif;
+    font-family: 'CustomFontFamily', Arial, sans-serif; /* Fallback to Arial if custom font is not available */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+}
+
+.left-group, .right-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gap {
+    width: 150px; /* Adjust the gap width as needed */
+}
+
+img {
+    height: 70px; 
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-word-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;  /* Add margin between image and word */
+}
+
+.image-container {
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.word-container {
+    display: flex;
+    align-items: center;
+}
+
+.wordToType {
+    font-size: 8rem;
+    color: #ccc; 
+}
+
+.badLetter {
+    font-size: 8rem;
+    color: red; 
+}
+
+.typedWord {
+    font-size: 8rem;
+    color: #000; 
+}
+
+.keyboard-container {
+    margin-top: 20px;
+}

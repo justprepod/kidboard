@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="carousel-container">
+            <div class="left-group"></div>
+            <div class="gap"></div>
+            <div class="right-group"></div>
+        </div>
+        <div class="image-word-container">
+            <div class="image-container">
+                <img src="" alt="Image">
+            </div>
+            <div class="word-container">
+                <span id="typedWord" class="typedWord">Word</span>
+                <span id="badLetter" class="badLetter">Word</span>
+                <span id="wordToType" class="wordToType">Word</span>
+            </div>
+        </div>
+        <div class="keyboard-container">
+            <!-- Keyboard keys will be dynamically generated here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
